@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_887546fd18e44cff84d3e456eb79c9a4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_887546fd18e44cff84d3e456eb79c9a4" ></div>
+        
+</body>
+<script>    
+    
+            var map_887546fd18e44cff84d3e456eb79c9a4 = L.map(
+                "map_887546fd18e44cff84d3e456eb79c9a4",
+                {
+                    center: [39.72378, -104.899157],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_11976283dc664c1dbf5d30e8493e313c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+            var circle_marker_355c84142156451a8ea90e5fda9b79b0 = L.circleMarker(
+                [39.6507833, -104.9044844],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_7c7296bab6244b5d8de1c8f4405350eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c761ab6d8a24e5587cda28168cc673e = $(`<div id="html_7c761ab6d8a24e5587cda28168cc673e" style="width: 100.0%; height: 100.0%;">Neighborhood: montbello<br>                     Date Occurred: 2016-06-15 23:31:00<br></div>`)[0];
+            popup_7c7296bab6244b5d8de1c8f4405350eb.setContent(html_7c761ab6d8a24e5587cda28168cc673e);
+        
+
+        circle_marker_355c84142156451a8ea90e5fda9b79b0.bindPopup(popup_7c7296bab6244b5d8de1c8f4405350eb)
+        ;
+
+        
+    
+    
+            var circle_marker_b6406c80cf5a4eceaf13acd8185d5b75 = L.circleMarker(
+                [39.6755566, -104.9349093],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_387e95456e04405c95abdfa009217c8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b501bb0ec7f480fb21ad571d56638c3 = $(`<div id="html_6b501bb0ec7f480fb21ad571d56638c3" style="width: 100.0%; height: 100.0%;">Neighborhood: gateway-green-valley-ranch<br>                     Date Occurred: 2017-10-11 12:30:00<br></div>`)[0];
+            popup_387e95456e04405c95abdfa009217c8a.setContent(html_6b501bb0ec7f480fb21ad571d56638c3);
+        
+
+        circle_marker_b6406c80cf5a4eceaf13acd8185d5b75.bindPopup(popup_387e95456e04405c95abdfa009217c8a)
+        ;
+
+        
+    
+    
+            var circle_marker_78b765117ffb4a6fb1e647af2fdecd1f = L.circleMarker(
+                [39.7021547, -104.9105773],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_804d161887e744b4a3455d7b90adae7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82eb4710b5594fbcb1c4936034904680 = $(`<div id="html_82eb4710b5594fbcb1c4936034904680" style="width: 100.0%; height: 100.0%;">Neighborhood: wellshire<br>                     Date Occurred: 2016-03-04 20:00:00<br></div>`)[0];
+            popup_804d161887e744b4a3455d7b90adae7c.setContent(html_82eb4710b5594fbcb1c4936034904680);
+        
+
+        circle_marker_78b765117ffb4a6fb1e647af2fdecd1f.bindPopup(popup_804d161887e744b4a3455d7b90adae7c)
+        ;
+
+        
+    
+    
+            var circle_marker_ff4add1623a24be0bd65de933bae79d7 = L.circleMarker(
+                [39.6847261, -104.9594483],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_1c80316882cd4bfea009795d05f9c083 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd212495e11142c09503e9727f3cb5fb = $(`<div id="html_cd212495e11142c09503e9727f3cb5fb" style="width: 100.0%; height: 100.0%;">Neighborhood: belcaro<br>                     Date Occurred: 2018-01-30 19:20:00<br></div>`)[0];
+            popup_1c80316882cd4bfea009795d05f9c083.setContent(html_cd212495e11142c09503e9727f3cb5fb);
+        
+
+        circle_marker_ff4add1623a24be0bd65de933bae79d7.bindPopup(popup_1c80316882cd4bfea009795d05f9c083)
+        ;
+
+        
+    
+    
+            var circle_marker_7b5177a7ef0c4a0dacc1ee72f1819bbd = L.circleMarker(
+                [39.7080982, -104.8713333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_a9cfd8c8d8b2498887b9a9754b06abb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47de62f9045f4327ba95433d626b3c64 = $(`<div id="html_47de62f9045f4327ba95433d626b3c64" style="width: 100.0%; height: 100.0%;">Neighborhood: cherry-creek<br>                     Date Occurred: 2017-06-22 20:53:00<br></div>`)[0];
+            popup_a9cfd8c8d8b2498887b9a9754b06abb6.setContent(html_47de62f9045f4327ba95433d626b3c64);
+        
+
+        circle_marker_7b5177a7ef0c4a0dacc1ee72f1819bbd.bindPopup(popup_a9cfd8c8d8b2498887b9a9754b06abb6)
+        ;
+
+        
+    
+    
+            var circle_marker_f0e032449e9e47b68fdc1385e92be698 = L.circleMarker(
+                [39.6582017, -104.8616786],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_d584a56653d84871ba5ec2ac2697b9e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abed81d72a1e4943a6d143997b43422b = $(`<div id="html_abed81d72a1e4943a6d143997b43422b" style="width: 100.0%; height: 100.0%;">Neighborhood: city-park-west<br>                     Date Occurred: 2018-01-31 00:44:00<br></div>`)[0];
+            popup_d584a56653d84871ba5ec2ac2697b9e9.setContent(html_abed81d72a1e4943a6d143997b43422b);
+        
+
+        circle_marker_f0e032449e9e47b68fdc1385e92be698.bindPopup(popup_d584a56653d84871ba5ec2ac2697b9e9)
+        ;
+
+        
+    
+    
+            var circle_marker_53438e757c5b48dea3ed5ccb52e5acd3 = L.circleMarker(
+                [39.7238682, -104.8782099],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_f5e174978f3843418326b649fa898f58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fc0f5a78cd94e3b83a9e91713c2f4d4 = $(`<div id="html_9fc0f5a78cd94e3b83a9e91713c2f4d4" style="width: 100.0%; height: 100.0%;">Neighborhood: villa-park<br>                     Date Occurred: 2017-06-01 12:15:00<br></div>`)[0];
+            popup_f5e174978f3843418326b649fa898f58.setContent(html_9fc0f5a78cd94e3b83a9e91713c2f4d4);
+        
+
+        circle_marker_53438e757c5b48dea3ed5ccb52e5acd3.bindPopup(popup_f5e174978f3843418326b649fa898f58)
+        ;
+
+        
+    
+    
+            var circle_marker_c3291fb85d81491298c720f0f2d1f758 = L.circleMarker(
+                [39.7136676, -104.9098478],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_a6dd063fd4794014b62dcc7d5e964e85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdba2b155f6b4cc29fecd8fe01810244 = $(`<div id="html_fdba2b155f6b4cc29fecd8fe01810244" style="width: 100.0%; height: 100.0%;">Neighborhood: speer<br>                     Date Occurred: 2018-01-30 07:40:00<br></div>`)[0];
+            popup_a6dd063fd4794014b62dcc7d5e964e85.setContent(html_fdba2b155f6b4cc29fecd8fe01810244);
+        
+
+        circle_marker_c3291fb85d81491298c720f0f2d1f758.bindPopup(popup_a6dd063fd4794014b62dcc7d5e964e85)
+        ;
+
+        
+    
+    
+            var circle_marker_fb171882c53048498db8ef061b2bd632 = L.circleMarker(
+                [39.718515999999994, -104.9871933],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_d3d0c61fb25a405899ba2e4e8cf58e18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa86f193e6a64a84a9368a1576b85827 = $(`<div id="html_fa86f193e6a64a84a9368a1576b85827" style="width: 100.0%; height: 100.0%;">Neighborhood: highland<br>                     Date Occurred: 2018-01-31 00:55:00<br></div>`)[0];
+            popup_d3d0c61fb25a405899ba2e4e8cf58e18.setContent(html_fa86f193e6a64a84a9368a1576b85827);
+        
+
+        circle_marker_fb171882c53048498db8ef061b2bd632.bindPopup(popup_d3d0c61fb25a405899ba2e4e8cf58e18)
+        ;
+
+        
+    
+    
+            var circle_marker_019f9facc26b449bba4afa31e10c5baa = L.circleMarker(
+                [39.6954777, -104.9050611],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_093bc4ecb31447fd9296992067bc47ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87b48bbfb9d844839f2c185be88de53a = $(`<div id="html_87b48bbfb9d844839f2c185be88de53a" style="width: 100.0%; height: 100.0%;">Neighborhood: goldsmith<br>                     Date Occurred: 2018-01-30 20:04:00<br></div>`)[0];
+            popup_093bc4ecb31447fd9296992067bc47ab.setContent(html_87b48bbfb9d844839f2c185be88de53a);
+        
+
+        circle_marker_019f9facc26b449bba4afa31e10c5baa.bindPopup(popup_093bc4ecb31447fd9296992067bc47ab)
+        ;
+
+        
+    
+    
+            var circle_marker_8b67f106d636488dac7319270494d84a = L.circleMarker(
+                [39.7181963, -104.9732322],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_4de8ca31520a43a0b9c00fd1b54bf2d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c76dddde21d6404b93bfaabf4deaf3b2 = $(`<div id="html_c76dddde21d6404b93bfaabf4deaf3b2" style="width: 100.0%; height: 100.0%;">Neighborhood: ruby-hill<br>                     Date Occurred: 2018-01-28 05:25:00<br></div>`)[0];
+            popup_4de8ca31520a43a0b9c00fd1b54bf2d7.setContent(html_c76dddde21d6404b93bfaabf4deaf3b2);
+        
+
+        circle_marker_8b67f106d636488dac7319270494d84a.bindPopup(popup_4de8ca31520a43a0b9c00fd1b54bf2d7)
+        ;
+
+        
+    
+    
+            var circle_marker_0d4def1ef08b42d78d0cfdfdf1f12944 = L.circleMarker(
+                [39.718182, -104.9899295],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_bf667b9314144cf89191593cc76a6f6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_873fed3ea6af44beb87f5f03121ac579 = $(`<div id="html_873fed3ea6af44beb87f5f03121ac579" style="width: 100.0%; height: 100.0%;">Neighborhood: cory-merrill<br>                     Date Occurred: 2016-05-31 16:54:00<br></div>`)[0];
+            popup_bf667b9314144cf89191593cc76a6f6f.setContent(html_873fed3ea6af44beb87f5f03121ac579);
+        
+
+        circle_marker_0d4def1ef08b42d78d0cfdfdf1f12944.bindPopup(popup_bf667b9314144cf89191593cc76a6f6f)
+        ;
+
+        
+    
+    
+            var circle_marker_36853ac9f28f468e93d564f186a70d60 = L.circleMarker(
+                [39.7189782, -104.9024623],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_c8ed4aa190424e808e244b4e0ec1f76a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c08fae529f147008df8e860634e4496 = $(`<div id="html_9c08fae529f147008df8e860634e4496" style="width: 100.0%; height: 100.0%;">Neighborhood: jefferson-park<br>                     Date Occurred: 2017-02-24 16:55:00<br></div>`)[0];
+            popup_c8ed4aa190424e808e244b4e0ec1f76a.setContent(html_9c08fae529f147008df8e860634e4496);
+        
+
+        circle_marker_36853ac9f28f468e93d564f186a70d60.bindPopup(popup_c8ed4aa190424e808e244b4e0ec1f76a)
+        ;
+
+        
+    
+    
+            var circle_marker_94458425b99a4246ad4eb5280a30111c = L.circleMarker(
+                [39.6541747, -104.8683674],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_8a16b81266734cf1b806b68516ebdb2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef1c35af618d46ce88dc5c9c1c86b882 = $(`<div id="html_ef1c35af618d46ce88dc5c9c1c86b882" style="width: 100.0%; height: 100.0%;">Neighborhood: windsor<br>                     Date Occurred: 2016-04-16 15:25:00<br></div>`)[0];
+            popup_8a16b81266734cf1b806b68516ebdb2d.setContent(html_ef1c35af618d46ce88dc5c9c1c86b882);
+        
+
+        circle_marker_94458425b99a4246ad4eb5280a30111c.bindPopup(popup_8a16b81266734cf1b806b68516ebdb2d)
+        ;
+
+        
+    
+    
+            var circle_marker_84a5a6cfe305489fbdb9b3eb2dd44dab = L.circleMarker(
+                [39.7076998, -104.8697303],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_e26e24fee2244c408fc04c9a0d2dc353 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa7635e8c8d847feb5af704300b1d4fe = $(`<div id="html_fa7635e8c8d847feb5af704300b1d4fe" style="width: 100.0%; height: 100.0%;">Neighborhood: highland<br>                     Date Occurred: 2017-05-28 02:00:00<br></div>`)[0];
+            popup_e26e24fee2244c408fc04c9a0d2dc353.setContent(html_fa7635e8c8d847feb5af704300b1d4fe);
+        
+
+        circle_marker_84a5a6cfe305489fbdb9b3eb2dd44dab.bindPopup(popup_e26e24fee2244c408fc04c9a0d2dc353)
+        ;
+
+        
+    
+    
+            var circle_marker_8b7278b065874320ba5519be2a30b9fb = L.circleMarker(
+                [39.7097701, -104.9449879],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_421054866b24454cb573978ae2ff4dce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_920f70cb14cd42afac6caf1ea51101f5 = $(`<div id="html_920f70cb14cd42afac6caf1ea51101f5" style="width: 100.0%; height: 100.0%;">Neighborhood: goldsmith<br>                     Date Occurred: 2017-06-16 21:30:00<br></div>`)[0];
+            popup_421054866b24454cb573978ae2ff4dce.setContent(html_920f70cb14cd42afac6caf1ea51101f5);
+        
+
+        circle_marker_8b7278b065874320ba5519be2a30b9fb.bindPopup(popup_421054866b24454cb573978ae2ff4dce)
+        ;
+
+        
+    
+    
+            var circle_marker_589a2cf2ddd54df4a46f882cff131727 = L.circleMarker(
+                [39.6840587, -104.9623777],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_44ea8c70d1f8452f9ab3a14100055e62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5e3bbc0c2c64fd689cfeb9299e43e36 = $(`<div id="html_b5e3bbc0c2c64fd689cfeb9299e43e36" style="width: 100.0%; height: 100.0%;">Neighborhood: lincoln-park<br>                     Date Occurred: 2018-01-29 14:50:00<br></div>`)[0];
+            popup_44ea8c70d1f8452f9ab3a14100055e62.setContent(html_b5e3bbc0c2c64fd689cfeb9299e43e36);
+        
+
+        circle_marker_589a2cf2ddd54df4a46f882cff131727.bindPopup(popup_44ea8c70d1f8452f9ab3a14100055e62)
+        ;
+
+        
+    
+    
+            var circle_marker_a5687748c8ad4d8fa34da7130e62433e = L.circleMarker(
+                [39.6892055, -104.9393158],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_df24aa92747b4a44bd5f025ceb3349d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_983e6871f777448885593679eb6601d6 = $(`<div id="html_983e6871f777448885593679eb6601d6" style="width: 100.0%; height: 100.0%;">Neighborhood: washington-park-west<br>                     Date Occurred: 2018-01-04 12:00:00<br></div>`)[0];
+            popup_df24aa92747b4a44bd5f025ceb3349d0.setContent(html_983e6871f777448885593679eb6601d6);
+        
+
+        circle_marker_a5687748c8ad4d8fa34da7130e62433e.bindPopup(popup_df24aa92747b4a44bd5f025ceb3349d0)
+        ;
+
+        
+    
+    
+            var circle_marker_bae8cb4b07c2485fb7fe59e9080f69e8 = L.circleMarker(
+                [39.709733, -104.9191047],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_052884e210744810830e649e2e1bbbd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4eb476be5ce4bcd98b4bc4f711683b4 = $(`<div id="html_e4eb476be5ce4bcd98b4bc4f711683b4" style="width: 100.0%; height: 100.0%;">Neighborhood: stapleton<br>                     Date Occurred: 2018-01-30 11:27:00<br></div>`)[0];
+            popup_052884e210744810830e649e2e1bbbd0.setContent(html_e4eb476be5ce4bcd98b4bc4f711683b4);
+        
+
+        circle_marker_bae8cb4b07c2485fb7fe59e9080f69e8.bindPopup(popup_052884e210744810830e649e2e1bbbd0)
+        ;
+
+        
+    
+    
+            var circle_marker_b9bdce29fedf4ad69c0a8ac5dfca1e47 = L.circleMarker(
+                [39.6780049, -104.9504368],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_dca7e84690734155af42efb24f701ece = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d72c3ce20f8349e7ae0d7a889ac2c824 = $(`<div id="html_d72c3ce20f8349e7ae0d7a889ac2c824" style="width: 100.0%; height: 100.0%;">Neighborhood: elyria-swansea<br>                     Date Occurred: 2018-01-30 12:30:00<br></div>`)[0];
+            popup_dca7e84690734155af42efb24f701ece.setContent(html_d72c3ce20f8349e7ae0d7a889ac2c824);
+        
+
+        circle_marker_b9bdce29fedf4ad69c0a8ac5dfca1e47.bindPopup(popup_dca7e84690734155af42efb24f701ece)
+        ;
+
+        
+    
+    
+            var circle_marker_03509a8a67114962b0ccc8da008d0d4d = L.circleMarker(
+                [39.6656749, -104.9409814],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_8ea68ddaed2d40d4bf7cb2ee22976bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8edfd9eaa7e64360bb698d3e7461104b = $(`<div id="html_8edfd9eaa7e64360bb698d3e7461104b" style="width: 100.0%; height: 100.0%;">Neighborhood: goldsmith<br>                     Date Occurred: 2018-01-29 21:30:00<br></div>`)[0];
+            popup_8ea68ddaed2d40d4bf7cb2ee22976bb6.setContent(html_8edfd9eaa7e64360bb698d3e7461104b);
+        
+
+        circle_marker_03509a8a67114962b0ccc8da008d0d4d.bindPopup(popup_8ea68ddaed2d40d4bf7cb2ee22976bb6)
+        ;
+
+        
+    
+    
+            var circle_marker_d5c8b09b467743b296de1de4ee3ab948 = L.circleMarker(
+                [39.6587138, -104.8529008],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_10d5da1a09b1429cb5515f1a026ec44b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32bfea2aee944d3b9d354e28ae8cc9f1 = $(`<div id="html_32bfea2aee944d3b9d354e28ae8cc9f1" style="width: 100.0%; height: 100.0%;">Neighborhood: hampden-south<br>                     Date Occurred: 2017-10-30 12:00:00<br></div>`)[0];
+            popup_10d5da1a09b1429cb5515f1a026ec44b.setContent(html_32bfea2aee944d3b9d354e28ae8cc9f1);
+        
+
+        circle_marker_d5c8b09b467743b296de1de4ee3ab948.bindPopup(popup_10d5da1a09b1429cb5515f1a026ec44b)
+        ;
+
+        
+    
+    
+            var circle_marker_d9d1cfd2e1de455e9669b09a7e351a12 = L.circleMarker(
+                [39.7111772, -104.9269802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_ebabc75c1d89420698c048d4d7637170 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8fed38dad8447a99570b670f97e5e12 = $(`<div id="html_c8fed38dad8447a99570b670f97e5e12" style="width: 100.0%; height: 100.0%;">Neighborhood: dia<br>                     Date Occurred: 2018-01-30 14:30:00<br></div>`)[0];
+            popup_ebabc75c1d89420698c048d4d7637170.setContent(html_c8fed38dad8447a99570b670f97e5e12);
+        
+
+        circle_marker_d9d1cfd2e1de455e9669b09a7e351a12.bindPopup(popup_ebabc75c1d89420698c048d4d7637170)
+        ;
+
+        
+    
+    
+            var circle_marker_f45918db87f54e5c8b7003b57fef9618 = L.circleMarker(
+                [39.6592928, -104.8573566],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_8a86c5e2ccfc48879590c1e4cd650d76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29de9e580ce9419cafcdb39d82368050 = $(`<div id="html_29de9e580ce9419cafcdb39d82368050" style="width: 100.0%; height: 100.0%;">Neighborhood: platt-park<br>                     Date Occurred: 2018-01-30 11:50:00<br></div>`)[0];
+            popup_8a86c5e2ccfc48879590c1e4cd650d76.setContent(html_29de9e580ce9419cafcdb39d82368050);
+        
+
+        circle_marker_f45918db87f54e5c8b7003b57fef9618.bindPopup(popup_8a86c5e2ccfc48879590c1e4cd650d76)
+        ;
+
+        
+    
+    
+            var circle_marker_abba50bc038942eea9245392ab7f5591 = L.circleMarker(
+                [39.6689458, -104.9337654],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_3e231345b905428dba39c9b540e809db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a89e4fa095cb405294f8a2ce796681ef = $(`<div id="html_a89e4fa095cb405294f8a2ce796681ef" style="width: 100.0%; height: 100.0%;">Neighborhood: west-colfax<br>                     Date Occurred: 2017-05-06 00:00:00<br></div>`)[0];
+            popup_3e231345b905428dba39c9b540e809db.setContent(html_a89e4fa095cb405294f8a2ce796681ef);
+        
+
+        circle_marker_abba50bc038942eea9245392ab7f5591.bindPopup(popup_3e231345b905428dba39c9b540e809db)
+        ;
+
+        
+    
+    
+            var circle_marker_ce71d2c13c594684b432ef2e6b2d7232 = L.circleMarker(
+                [39.6941911, -104.9358965],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_6113fb2c487344129848dad41f420e3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91e31e2bac0c424793bd3738e751db0a = $(`<div id="html_91e31e2bac0c424793bd3738e751db0a" style="width: 100.0%; height: 100.0%;">Neighborhood: stapleton<br>                     Date Occurred: 2016-06-12 20:00:00<br></div>`)[0];
+            popup_6113fb2c487344129848dad41f420e3b.setContent(html_91e31e2bac0c424793bd3738e751db0a);
+        
+
+        circle_marker_ce71d2c13c594684b432ef2e6b2d7232.bindPopup(popup_6113fb2c487344129848dad41f420e3b)
+        ;
+
+        
+    
+    
+            var circle_marker_6f6b483a4cc2449aa2e76afeb9951e57 = L.circleMarker(
+                [39.6864919, -104.9871573],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_90f50cfb729a402eb26dfb23b3c91309 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfe1e3f0a0744e32a3e8d4dc85a8e43b = $(`<div id="html_cfe1e3f0a0744e32a3e8d4dc85a8e43b" style="width: 100.0%; height: 100.0%;">Neighborhood: harvey-park-south<br>                     Date Occurred: 2018-01-30 20:15:00<br></div>`)[0];
+            popup_90f50cfb729a402eb26dfb23b3c91309.setContent(html_cfe1e3f0a0744e32a3e8d4dc85a8e43b);
+        
+
+        circle_marker_6f6b483a4cc2449aa2e76afeb9951e57.bindPopup(popup_90f50cfb729a402eb26dfb23b3c91309)
+        ;
+
+        
+    
+    
+            var circle_marker_831f294dfa7047f899ff14b353e207c0 = L.circleMarker(
+                [39.7156893, -104.9811496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_a46375bbe23a4c4daea2519375ac5bf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a9b5f12dfc640fba2e0492d92f11115 = $(`<div id="html_0a9b5f12dfc640fba2e0492d92f11115" style="width: 100.0%; height: 100.0%;">Neighborhood: baker<br>                     Date Occurred: 2016-05-18 12:15:00<br></div>`)[0];
+            popup_a46375bbe23a4c4daea2519375ac5bf6.setContent(html_0a9b5f12dfc640fba2e0492d92f11115);
+        
+
+        circle_marker_831f294dfa7047f899ff14b353e207c0.bindPopup(popup_a46375bbe23a4c4daea2519375ac5bf6)
+        ;
+
+        
+    
+    
+            var circle_marker_f539fe55e72f4f258149a22663dc1a5f = L.circleMarker(
+                [39.7118305, -104.9113953],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_4f1e9caf81274845bac948325c73a664 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_276fb8dcb85643d8ab27beb6ed7673db = $(`<div id="html_276fb8dcb85643d8ab27beb6ed7673db" style="width: 100.0%; height: 100.0%;">Neighborhood: cheesman-park<br>                     Date Occurred: 2018-01-18 14:00:00<br></div>`)[0];
+            popup_4f1e9caf81274845bac948325c73a664.setContent(html_276fb8dcb85643d8ab27beb6ed7673db);
+        
+
+        circle_marker_f539fe55e72f4f258149a22663dc1a5f.bindPopup(popup_4f1e9caf81274845bac948325c73a664)
+        ;
+
+        
+    
+    
+            var circle_marker_76a5c5ca3dc849d4a58074d61dc3904d = L.circleMarker(
+                [39.6752568, -104.9919289],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_6e35b0b3ad074e5e835543fd7d72748c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_122f2da1baf44128b2a3e7b386708af2 = $(`<div id="html_122f2da1baf44128b2a3e7b386708af2" style="width: 100.0%; height: 100.0%;">Neighborhood: dia<br>                     Date Occurred: 2018-01-29 07:37:00<br></div>`)[0];
+            popup_6e35b0b3ad074e5e835543fd7d72748c.setContent(html_122f2da1baf44128b2a3e7b386708af2);
+        
+
+        circle_marker_76a5c5ca3dc849d4a58074d61dc3904d.bindPopup(popup_6e35b0b3ad074e5e835543fd7d72748c)
+        ;
+
+        
+    
+    
+            var circle_marker_c5cd26d20cf04fa29e8c44226f21cf84 = L.circleMarker(
+                [39.6441443, -104.8804498],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_b626b6d3d4eb411abf1573bfd37d26f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfa46d4d2e16477f86859685e630f059 = $(`<div id="html_dfa46d4d2e16477f86859685e630f059" style="width: 100.0%; height: 100.0%;">Neighborhood: lincoln-park<br>                     Date Occurred: 2018-01-30 18:19:00<br></div>`)[0];
+            popup_b626b6d3d4eb411abf1573bfd37d26f2.setContent(html_dfa46d4d2e16477f86859685e630f059);
+        
+
+        circle_marker_c5cd26d20cf04fa29e8c44226f21cf84.bindPopup(popup_b626b6d3d4eb411abf1573bfd37d26f2)
+        ;
+
+        
+    
+    
+            var circle_marker_da189d0e8fff4fbf9ef029c9db5a8095 = L.circleMarker(
+                [39.6928305, -104.9361028],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_665bb1607cc247abb529e0aa9db4b909 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac2785447e044a0d823165cfb69ce43d = $(`<div id="html_ac2785447e044a0d823165cfb69ce43d" style="width: 100.0%; height: 100.0%;">Neighborhood: cbd<br>                     Date Occurred: 2017-08-01 20:34:00<br></div>`)[0];
+            popup_665bb1607cc247abb529e0aa9db4b909.setContent(html_ac2785447e044a0d823165cfb69ce43d);
+        
+
+        circle_marker_da189d0e8fff4fbf9ef029c9db5a8095.bindPopup(popup_665bb1607cc247abb529e0aa9db4b909)
+        ;
+
+        
+    
+    
+            var circle_marker_d84cc2c78c144036a984bd5447f90899 = L.circleMarker(
+                [39.7112072, -104.9141268],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_be799614b4cb4cca8b289c8544c07ede = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa32d920564244b692f0ab34abe270c7 = $(`<div id="html_aa32d920564244b692f0ab34abe270c7" style="width: 100.0%; height: 100.0%;">Neighborhood: rosedale<br>                     Date Occurred: 2016-04-24 22:00:00<br></div>`)[0];
+            popup_be799614b4cb4cca8b289c8544c07ede.setContent(html_aa32d920564244b692f0ab34abe270c7);
+        
+
+        circle_marker_d84cc2c78c144036a984bd5447f90899.bindPopup(popup_be799614b4cb4cca8b289c8544c07ede)
+        ;
+
+        
+    
+    
+            var circle_marker_1bc5a77cbf644a1ba12686f855fc231f = L.circleMarker(
+                [39.6778367, -104.9073281],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_349ca2a1169b487dac3d6364f947b79a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3aa1e0d7e0414890b7270642cec95fd1 = $(`<div id="html_3aa1e0d7e0414890b7270642cec95fd1" style="width: 100.0%; height: 100.0%;">Neighborhood: gateway-green-valley-ranch<br>                     Date Occurred: 2018-01-29 08:15:00<br></div>`)[0];
+            popup_349ca2a1169b487dac3d6364f947b79a.setContent(html_3aa1e0d7e0414890b7270642cec95fd1);
+        
+
+        circle_marker_1bc5a77cbf644a1ba12686f855fc231f.bindPopup(popup_349ca2a1169b487dac3d6364f947b79a)
+        ;
+
+        
+    
+    
+            var circle_marker_978612dd37b64f9a8fb5191798faf38b = L.circleMarker(
+                [39.6464967, -104.89674],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_97e79d7add7c478dbee2c591ec083bd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cc6e9db8c174aa9a4b2a279abcac541 = $(`<div id="html_5cc6e9db8c174aa9a4b2a279abcac541" style="width: 100.0%; height: 100.0%;">Neighborhood: stapleton<br>                     Date Occurred: 2018-01-30 00:51:00<br></div>`)[0];
+            popup_97e79d7add7c478dbee2c591ec083bd0.setContent(html_5cc6e9db8c174aa9a4b2a279abcac541);
+        
+
+        circle_marker_978612dd37b64f9a8fb5191798faf38b.bindPopup(popup_97e79d7add7c478dbee2c591ec083bd0)
+        ;
+
+        
+    
+    
+            var circle_marker_5d839092351d464285686d59be77b200 = L.circleMarker(
+                [39.725646999999995, -104.9862631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_4ec9f58c6d1b4732b7e086fd89f2b2bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba65d6430e3f483280c1ecefea8ae58d = $(`<div id="html_ba65d6430e3f483280c1ecefea8ae58d" style="width: 100.0%; height: 100.0%;">Neighborhood: cbd<br>                     Date Occurred: 2018-01-30 20:00:00<br></div>`)[0];
+            popup_4ec9f58c6d1b4732b7e086fd89f2b2bb.setContent(html_ba65d6430e3f483280c1ecefea8ae58d);
+        
+
+        circle_marker_5d839092351d464285686d59be77b200.bindPopup(popup_4ec9f58c6d1b4732b7e086fd89f2b2bb)
+        ;
+
+        
+    
+    
+            var circle_marker_f29ff213576c43de89bcfcd761e9d0aa = L.circleMarker(
+                [39.7254654, -104.9995503],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_f26303cef9ff49dc92316f7748a93d9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14f3e74902b440e78dc824aa48405a6b = $(`<div id="html_14f3e74902b440e78dc824aa48405a6b" style="width: 100.0%; height: 100.0%;">Neighborhood: stapleton<br>                     Date Occurred: 2018-01-30 10:10:00<br></div>`)[0];
+            popup_f26303cef9ff49dc92316f7748a93d9f.setContent(html_14f3e74902b440e78dc824aa48405a6b);
+        
+
+        circle_marker_f29ff213576c43de89bcfcd761e9d0aa.bindPopup(popup_f26303cef9ff49dc92316f7748a93d9f)
+        ;
+
+        
+    
+    
+            var circle_marker_31b7fe6af30c48da81059c550cf51e65 = L.circleMarker(
+                [39.6762782, -104.9297023],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_61fe11dc5bed4fe4af2d2e051a2b6779 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_831742e33cd74f6ab5dbbc6410dc6092 = $(`<div id="html_831742e33cd74f6ab5dbbc6410dc6092" style="width: 100.0%; height: 100.0%;">Neighborhood: dia<br>                     Date Occurred: 2018-01-29 15:30:00<br></div>`)[0];
+            popup_61fe11dc5bed4fe4af2d2e051a2b6779.setContent(html_831742e33cd74f6ab5dbbc6410dc6092);
+        
+
+        circle_marker_31b7fe6af30c48da81059c550cf51e65.bindPopup(popup_61fe11dc5bed4fe4af2d2e051a2b6779)
+        ;
+
+        
+    
+    
+            var circle_marker_7bd796f955c34e6d98d518c59b15311f = L.circleMarker(
+                [39.6775151, -104.9056326],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_1d04c559f5e14868b2b4032c02f9f640 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_795e9a9122a54fcfb1a5bbf7be838043 = $(`<div id="html_795e9a9122a54fcfb1a5bbf7be838043" style="width: 100.0%; height: 100.0%;">Neighborhood: montbello<br>                     Date Occurred: 2018-01-30 22:14:00<br></div>`)[0];
+            popup_1d04c559f5e14868b2b4032c02f9f640.setContent(html_795e9a9122a54fcfb1a5bbf7be838043);
+        
+
+        circle_marker_7bd796f955c34e6d98d518c59b15311f.bindPopup(popup_1d04c559f5e14868b2b4032c02f9f640)
+        ;
+
+        
+    
+    
+            var circle_marker_d5b342c3e31148d79180ee4459a97260 = L.circleMarker(
+                [39.7233353, -104.8791923],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_a327b9bf2b2c4d5a807cbc831acbb675 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3e4ec1f1b5b42afa53c3b3e24e40739 = $(`<div id="html_e3e4ec1f1b5b42afa53c3b3e24e40739" style="width: 100.0%; height: 100.0%;">Neighborhood: windsor<br>                     Date Occurred: 2016-04-13 13:00:00<br></div>`)[0];
+            popup_a327b9bf2b2c4d5a807cbc831acbb675.setContent(html_e3e4ec1f1b5b42afa53c3b3e24e40739);
+        
+
+        circle_marker_d5b342c3e31148d79180ee4459a97260.bindPopup(popup_a327b9bf2b2c4d5a807cbc831acbb675)
+        ;
+
+        
+    
+    
+            var circle_marker_891731c741214c5294d4f0596b9b1e5a = L.circleMarker(
+                [39.6386707, -104.8926846],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_c58c83554ada40c2b18869d2bd9aa177 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_803ff857a17c4d9698cfcbb7fc72f7c5 = $(`<div id="html_803ff857a17c4d9698cfcbb7fc72f7c5" style="width: 100.0%; height: 100.0%;">Neighborhood: cherry-creek<br>                     Date Occurred: 2016-05-27 12:00:00<br></div>`)[0];
+            popup_c58c83554ada40c2b18869d2bd9aa177.setContent(html_803ff857a17c4d9698cfcbb7fc72f7c5);
+        
+
+        circle_marker_891731c741214c5294d4f0596b9b1e5a.bindPopup(popup_c58c83554ada40c2b18869d2bd9aa177)
+        ;
+
+        
+    
+    
+            var circle_marker_d588e76bdc8a497c8ca0e42178117f6d = L.circleMarker(
+                [39.7147918, -104.9899683],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_2b23219948ef448dbf6816e9ca2cb782 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_370bafba216b45acb3165186f74a644e = $(`<div id="html_370bafba216b45acb3165186f74a644e" style="width: 100.0%; height: 100.0%;">Neighborhood: barnum-west<br>                     Date Occurred: 2018-01-30 22:30:00<br></div>`)[0];
+            popup_2b23219948ef448dbf6816e9ca2cb782.setContent(html_370bafba216b45acb3165186f74a644e);
+        
+
+        circle_marker_d588e76bdc8a497c8ca0e42178117f6d.bindPopup(popup_2b23219948ef448dbf6816e9ca2cb782)
+        ;
+
+        
+    
+    
+            var circle_marker_65336a699db541eb9d70780f76b3f645 = L.circleMarker(
+                [39.6584037, -104.8619644],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_01a3271720194d6e8f9863409c1e8a21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c25b9a374e064fc5875384ae2878c342 = $(`<div id="html_c25b9a374e064fc5875384ae2878c342" style="width: 100.0%; height: 100.0%;">Neighborhood: city-park-west<br>                     Date Occurred: 2017-11-25 18:30:00<br></div>`)[0];
+            popup_01a3271720194d6e8f9863409c1e8a21.setContent(html_c25b9a374e064fc5875384ae2878c342);
+        
+
+        circle_marker_65336a699db541eb9d70780f76b3f645.bindPopup(popup_01a3271720194d6e8f9863409c1e8a21)
+        ;
+
+        
+    
+    
+            var circle_marker_874b7219ac6a4ccbb4a29d3f415e8930 = L.circleMarker(
+                [39.702704, -104.9880304],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_b6c481f0b1d0448588118e5445460407 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5c84eb1ec9c45d09ff780aaaf6fe2a9 = $(`<div id="html_a5c84eb1ec9c45d09ff780aaaf6fe2a9" style="width: 100.0%; height: 100.0%;">Neighborhood: lincoln-park<br>                     Date Occurred: 2017-01-30 00:00:00<br></div>`)[0];
+            popup_b6c481f0b1d0448588118e5445460407.setContent(html_a5c84eb1ec9c45d09ff780aaaf6fe2a9);
+        
+
+        circle_marker_874b7219ac6a4ccbb4a29d3f415e8930.bindPopup(popup_b6c481f0b1d0448588118e5445460407)
+        ;
+
+        
+    
+    
+            var circle_marker_70f64603c4524b7b8108a6c779774f35 = L.circleMarker(
+                [39.6547735, -104.9058073],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_2b73a4431f374ec99ad41b4ea80f46c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c64e4b39e1c45198f14052d705e4a06 = $(`<div id="html_0c64e4b39e1c45198f14052d705e4a06" style="width: 100.0%; height: 100.0%;">Neighborhood: cherry-creek<br>                     Date Occurred: 2016-02-28 06:30:00<br></div>`)[0];
+            popup_2b73a4431f374ec99ad41b4ea80f46c7.setContent(html_0c64e4b39e1c45198f14052d705e4a06);
+        
+
+        circle_marker_70f64603c4524b7b8108a6c779774f35.bindPopup(popup_2b73a4431f374ec99ad41b4ea80f46c7)
+        ;
+
+        
+    
+    
+            var circle_marker_9436f57e588446e28d1e97bcf1dfc720 = L.circleMarker(
+                [39.7184272, -104.9907453],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_887546fd18e44cff84d3e456eb79c9a4);
+        
+    
+        var popup_86abba0c9d84442aa7ffca504df510bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aef26320935244ce8b231bc7d0b6cdfa = $(`<div id="html_aef26320935244ce8b231bc7d0b6cdfa" style="width: 100.0%; height: 100.0%;">Neighborhood: dia<br>                     Date Occurred: 2018-01-17 03:00:00<br></div>`)[0];
+            popup_86abba0c9d84442aa7ffca504df510bb.setContent(html_aef26320935244ce8b231bc7d0b6cdfa);
+        
+
+        circle_marker_9436f57e588446e28d1e97bcf1dfc720.bindPopup(popup_86abba0c9d84442aa7ffca504df510bb)
+        ;
+
+        
+    
+</script>
